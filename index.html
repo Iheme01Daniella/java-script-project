@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">`\\10
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm py-3 bg-white">
+        <div class="container-fluid px-4">
+            <!-- Brand Logo -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <i class="bi bi-currency-bitcoin text-info fs-3 me-2"></i>
+                <span>WalletWise</span>
+            </a>
+
+            <!-- Toggler (Mobile View) -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">FAQ</a>
+                    </li>
+                </ul>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-dark rounded-pill px-4" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Log In</button>
+                    <button class="btn btn-info text-white rounded-pill px-4" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-image">
+        <div class="row mt-4 px-4 mb-4">
+            <div class="col-md-6 mt-5">
+                <h1 class="h1 text-white">Securely Manage <br>Your <strong style="color: aqua;">Digital</strong>
+                    <br>Assets
+                </h1>
+                <p class="p text-white">Secure and manage your cryptocurrencies across multiple <br> blockchains with
+                    WalletWise.</p>
+            </div>
+        </div>
+        <div class="row px-4 mb-4">
+            <div class="col">
+                <button class="btn py-2 px-3" style="background-color: aqua; width: 150px;">Get Started</button>
+                <button class="btn text-white bg-dark border border-light" style="width: 150px;">View Demo</button>
+                <div class="container-fluid px-2 mt-4">
+                    <div class="d-flex flex-wrap align-items-center gap-2 text-white">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-lock"></i>
+                            <span>256-bit Encryption</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-envelope"></i>
+                            <span>Biometric Security</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-globe"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- STATS SECTION -->
+    <div class="container-fluid" style="margin-bottom: 5rem;">
+        <div class="row text-center">
+            <div class="col-md-3 test2">
+                <h1><strong style="color: aqua;">2M+</strong></h1>
+                <p>Active Users</p>
+            </div>
+            <div class="col-md-3 test2">
+                <h1><strong style="color: aqua;">$10B+</strong></h1>
+                <p>Assets Managed</p>
+            </div>
+            <div class="col-md-3 test2">
+                <h1><strong style="color: aqua;">150+</strong></h1>
+                <p>Cryptocurrencies</p>
+            </div>
+            <div class="col-md-3 test2">
+                <h1><strong style="color: aqua;">99.99%</strong></h1>
+                <p>Uptime</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <div class="container-fluid mt-4">
+        <h2 class="text-center">Powerful Features for Your Crypto Journey</h2>
+        <p class="text-center mt-3">Everything you need to manage, trade, and secure your digital assets in one
+            intuitive platform.</p>
+    </div>
+
+    <!-- DYNAMIC FEATURES WILL LOAD HERE -->
+    <div class="container mt-4">
+        <div class="row" id="features-row"></div>
+    </div>
+
+    <div class="container-fluid py-5 text-white" style="background-color: deepskyblue;">
+        <div class="container mt-5 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="./images/WhatsApp Image 2025-07-31 at 09.44.12_6c0dd0b7.jpg" alt="Security Image"
+                        class="img-fluid rounded shadow-lg">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Bank-Grade Security for Your Peace of Mind</h2>
+                    <p class="mb-4">We’ve implemented multiple layers of protection to ensure your digital assets
+                        remain secure at all times.</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-fingerprint fs-4 me-3 icon-secure"></i>
+                            <div>
+                                <strong>Biometric Authentication</strong>
+                                <p class="mb-0 small">Secure access with fingerprint and facial recognition.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-shield-lock fs-4 me-3 icon-secure"></i>
+                            <div>
+                                <strong>Multi-Factor Authentication</strong>
+                                <p class="mb-0 small">Add extra layers of verification for critical operations.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-hdd-fill fs-4 me-3 icon-secure"></i>
+                            <div>
+                                <strong>Cold Storage</strong>
+                                <p class="mb-0 small">Majority of assets stored in offline, hack-proof environments.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="bi bi-shield-exclamation fs-4 me-3 icon-secure"></i>
+                            <div>
+                                <strong>Fraud Detection</strong>
+                                <p class="mb-0 small">AI-powered system to identify and prevent suspicious
+                                    activities.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-outline-light">Learn About Security</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <h2 style="text-align: center;">Trusted by Crypto Enthusiasts Worldwide</h2>
+        <p style="text-align: center;">See what our users have to say about their experience with our wallet</p>
+        <div class="row" id="item-row"></div> <!-- Add id="item-row" here -->
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="container mt-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold asked">Frequently Asked Questions</h2>
+            <p class="text-muted">Find answers to common questions about WalletWise.</p>
+        </div>
+
+        <div class="swiper">
+            <!-- Swiper Wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./images/img of a woman 1.jpg" alt="Woman 1" class="img-fluid">
+                    <h6 class="fw-bold">Is WalletWise secure?</h6>
+                    <p class="text-muted">
+                        Absolutely. WalletWise employs state-of-the-art security measures, including multi-factor
+                        authentication, end-to-end encryption, and regular security audits to ensure your assets are
+                        always protected.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img of a woman 2.jpg" alt="Woman 2" class="img-fluid">
+                    <h6 class="fw-bold">Is WalletWise easy to use for beginners?</h6>
+                    <p class="text-muted">
+                        Yes! We've designed WalletWise with a user-friendly interface that’s intuitive and easy to
+                        navigate. Our support team is also available to help you get started.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img of a woman 4.jpg" alt="Woman 4" class="img-fluid">
+                    <h6 class="fw-bold">What are the fees for using WalletWise?</h6>
+                    <p class="text-muted">
+                        WalletWise aims to provide competitive and transparent fees. Basic wallet functions like holding
+                        and receiving crypto are generally free. Transaction fees are determined by the blockchain
+                        networks.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img of woman 5.jpg" alt="Woman 5" class="img-fluid">
+                    <h6 class="fw-bold">Is there a mobile app available?</h6>
+                    <p class="text-muted">
+                        Yes, our mobile app is available for both iOS and Android devices, giving you access to your
+                        finances on the go.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img of.jpg" alt="Generic" class="img-fluid">
+                    <h6 class="fw-bold">Can I import an existing wallet to WalletWise?</h6>
+                    <p class="text-muted">
+                        Yes, WalletWise allows you to easily import wallets using your seed phrase or private keys. We
+                        provide secure and straightforward steps to migrate your assets.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/high-angle-woman-with-sunglasses.jpg" alt="Woman with Sunglasses"
+                        class="img-fluid">
+                    <h6 class="fw-bold">What kind of support do you offer?</h6>
+                    <p class="text-muted">
+                        We offer email support for all users, with Premium and Business plans receiving priority
+                        assistance and access to live chat.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pagination Dots -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <div class="text-center mt-4 mb-5">
+            <p class="text-muted mb-2">Still have questions? We’re here to help.</p>
+            <a href="#" class="fw-semibold text-decoration-none text-emphasis">
+                Contact our support team <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="py-5 text-white" style="background-color: deepskyblue;">
+        <div class="container text-center">
+
+            <h2 class="fw-bold mb-3">Ready to Take Control of Your Crypto?</h2>
+            <p class="mb-4">
+                Join thousands of users who trust WalletWise for secure and easy crypto management.<br>
+                Sign up today and experience the future of digital finance.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+                <a href="#" class="btn btn-dark px-4 py-2">
+                    <i class="fa-brands fa-apple"></i> Download on the Apple Store
+                </a>
+                <a href="#" class="btn btn-dark px-4 py-2">
+                    <i class="fa-brands fa-google-play"></i> Download it from Playstore
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 text-white-50 small mt-2">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-shield-halved" style="color: blue;"></i>
+                    <span>Secure & Private</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bell" style="color: blue;"></i>
+                    <span>24/7 Support</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-up" style="color: blue;"></i>
+                    <span>Regular Updates</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container mt-5" id="newsletter">
+            <div class="bg-light-blue rounded p-4 text-center">
+                <h4 class="fw-bold text-dark">Stay Updated with Crypto Trends</h4>
+                <p class="text-muted mb-4">
+                    Subscribe to our newsletter for market insights, security tips, and product updates.
+                </p>
+
+                <form class="row justify-content-center" id="subscribeForm">
+                    <div class="col-md-6 col-sm-8">
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email"
+                                required>
+                            <button class="btn btn-info text-white" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055;">
+                <div id="toastSuccess" class="toast align-items-center text-white bg-success border-0" role="alert">
+                    <div class="d-flex">
+                        <div class="toast-body">Subscription successful!</div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                        data-bs-dismiss="toast"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5 bg-light text-dark">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-info">
+                        <i class="bi bi-currency-bitcoin me-1"></i> WalletWise
+                    </h5>
+                    <p class="text-muted">
+                        Secure, user-friendly crypto wallet for managing your digital assets with confidence. Track,
+                        store, and grow your portfolio with military-grade security.
+                    </p>
+                    <div class="d-flex gap-3 fs-5">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Press</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold">Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Wallet</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Exchange</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">API</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Developers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Help Centre</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Status</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Legal</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container mt-5 border-top pt-3">
+                <div class="row align-items-center">
+                    <!-- Left Side: Text -->
+                    <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <small class="text-muted">© 2025 FinovatePay. All rights reserved.</small>
+                    </div>
+
+                    <!-- Right Side: Icons -->
+                    <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end gap-3 fs-5">
+                        <i class="fas fa-credit-card" style="color: deepskyblue;"></i>
+                        <i class="fas fa-coins" style="color: deepskyblue;"></i>
+                        <i class="fas fa-truck" style="color: deepskyblue;"></i>
+                        <i class="fa-brands fa-apple" style="color: deepskyblue;"></i>
+                        <i class="fab fa-google" style="color: deepskyblue;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
