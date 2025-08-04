@@ -102,40 +102,45 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 5000,
-    },
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+  },
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-    scrollbar: {
-        el: ".swiper-scrollbar",
-    },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+  },
 });
